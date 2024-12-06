@@ -30,11 +30,9 @@
         {
             panel1 = new Panel();
             panel2 = new Panel();
-            label10 = new Label();
             label9 = new Label();
             panel3 = new Panel();
             panel4 = new Panel();
-            label8 = new Label();
             label7 = new Label();
             panel5 = new Panel();
             panel6 = new Panel();
@@ -64,6 +62,19 @@
             panel24 = new Panel();
             panel25 = new Panel();
             panel26 = new Panel();
+            customButton1 = new CustomButton();
+            panel27 = new Panel();
+            label16 = new Label();
+            label15 = new Label();
+            label14 = new Label();
+            label13 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            button5 = new Button();
+            button4 = new Button();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -74,13 +85,14 @@
             panel8.SuspendLayout();
             panel9.SuspendLayout();
             panel10.SuspendLayout();
+            panel27.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.Red;
             panel1.Controls.Add(panel2);
-            panel1.Location = new Point(150, 250);
+            panel1.Location = new Point(286, 267);
             panel1.Name = "panel1";
             panel1.Size = new Size(100, 100);
             panel1.TabIndex = 0;
@@ -88,39 +100,28 @@
             // panel2
             // 
             panel2.BackColor = Color.Black;
-            panel2.Controls.Add(label10);
             panel2.Controls.Add(label9);
             panel2.Location = new Point(5, 5);
             panel2.Name = "panel2";
             panel2.Size = new Size(90, 90);
             panel2.TabIndex = 0;
             // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.ForeColor = Color.Red;
-            label10.Location = new Point(24, 48);
-            label10.Name = "label10";
-            label10.Size = new Size(46, 15);
-            label10.TabIndex = 2;
-            label10.Text = "Yard #1";
-            label10.TextAlign = ContentAlignment.TopCenter;
-            // 
             // label9
             // 
             label9.AutoSize = true;
             label9.ForeColor = Color.Red;
-            label9.Location = new Point(24, 33);
+            label9.Location = new Point(12, 33);
             label9.Name = "label9";
-            label9.Size = new Size(42, 15);
+            label9.Size = new Size(65, 30);
             label9.TabIndex = 1;
-            label9.Text = "Switch";
+            label9.Text = "Switchyard\r\n#1";
+            label9.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel3
             // 
             panel3.BackColor = Color.Red;
             panel3.Controls.Add(panel4);
-            panel3.Location = new Point(1210, 250);
+            panel3.Location = new Point(1346, 267);
             panel3.Name = "panel3";
             panel3.Size = new Size(100, 100);
             panel3.TabIndex = 1;
@@ -128,39 +129,28 @@
             // panel4
             // 
             panel4.BackColor = Color.Black;
-            panel4.Controls.Add(label8);
             panel4.Controls.Add(label7);
             panel4.Location = new Point(5, 5);
             panel4.Name = "panel4";
             panel4.Size = new Size(90, 90);
             panel4.TabIndex = 0;
             // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.ForeColor = Color.Red;
-            label8.Location = new Point(25, 48);
-            label8.Name = "label8";
-            label8.Size = new Size(46, 15);
-            label8.TabIndex = 1;
-            label8.Text = "Yard #2";
-            label8.TextAlign = ContentAlignment.TopCenter;
-            // 
             // label7
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.Red;
-            label7.Location = new Point(25, 33);
+            label7.Location = new Point(13, 33);
             label7.Name = "label7";
-            label7.Size = new Size(42, 15);
+            label7.Size = new Size(65, 30);
             label7.TabIndex = 0;
-            label7.Text = "Switch";
+            label7.Text = "Switchyard\r\n#2";
+            label7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // panel5
             // 
             panel5.BackColor = Color.Yellow;
             panel5.Controls.Add(panel6);
-            panel5.Location = new Point(400, 260);
+            panel5.Location = new Point(536, 277);
             panel5.Name = "panel5";
             panel5.Size = new Size(120, 80);
             panel5.TabIndex = 2;
@@ -199,7 +189,7 @@
             // 
             panel7.BackColor = Color.Yellow;
             panel7.Controls.Add(panel8);
-            panel7.Location = new Point(670, 260);
+            panel7.Location = new Point(806, 277);
             panel7.Name = "panel7";
             panel7.Size = new Size(120, 80);
             panel7.TabIndex = 3;
@@ -238,7 +228,7 @@
             // 
             panel9.BackColor = Color.Yellow;
             panel9.Controls.Add(panel10);
-            panel9.Location = new Point(940, 260);
+            panel9.Location = new Point(1076, 277);
             panel9.Name = "panel9";
             panel9.Size = new Size(120, 80);
             panel9.TabIndex = 3;
@@ -276,7 +266,7 @@
             // panel11
             // 
             panel11.BackColor = Color.FromArgb(255, 128, 0);
-            panel11.Location = new Point(251, 295);
+            panel11.Location = new Point(387, 312);
             panel11.Name = "panel11";
             panel11.Size = new Size(148, 10);
             panel11.TabIndex = 4;
@@ -284,7 +274,7 @@
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(255, 128, 0);
-            panel12.Location = new Point(521, 295);
+            panel12.Location = new Point(657, 312);
             panel12.Name = "panel12";
             panel12.Size = new Size(148, 8);
             panel12.TabIndex = 5;
@@ -292,7 +282,7 @@
             // panel13
             // 
             panel13.BackColor = Color.FromArgb(255, 128, 0);
-            panel13.Location = new Point(791, 295);
+            panel13.Location = new Point(927, 312);
             panel13.Name = "panel13";
             panel13.Size = new Size(148, 8);
             panel13.TabIndex = 5;
@@ -300,14 +290,14 @@
             // panel14
             // 
             panel14.BackColor = Color.FromArgb(255, 128, 0);
-            panel14.Location = new Point(1061, 295);
+            panel14.Location = new Point(1197, 312);
             panel14.Name = "panel14";
             panel14.Size = new Size(148, 8);
             panel14.TabIndex = 5;
             // 
             // panel16
             // 
-            panel16.Location = new Point(637, 265);
+            panel16.Location = new Point(773, 282);
             panel16.Name = "panel16";
             panel16.Size = new Size(15, 15);
             panel16.TabIndex = 7;
@@ -315,7 +305,7 @@
             // 
             // panel17
             // 
-            panel17.Location = new Point(806, 265);
+            panel17.Location = new Point(942, 282);
             panel17.Name = "panel17";
             panel17.Size = new Size(15, 15);
             panel17.TabIndex = 8;
@@ -323,7 +313,7 @@
             // 
             // panel18
             // 
-            panel18.Location = new Point(908, 265);
+            panel18.Location = new Point(1044, 282);
             panel18.Name = "panel18";
             panel18.Size = new Size(15, 15);
             panel18.TabIndex = 9;
@@ -331,7 +321,7 @@
             // 
             // panel15
             // 
-            panel15.Location = new Point(537, 265);
+            panel15.Location = new Point(673, 282);
             panel15.Name = "panel15";
             panel15.Size = new Size(15, 15);
             panel15.TabIndex = 6;
@@ -339,7 +329,7 @@
             // 
             // panel19
             // 
-            panel19.Location = new Point(537, 244);
+            panel19.Location = new Point(673, 261);
             panel19.Name = "panel19";
             panel19.Size = new Size(20, 15);
             panel19.TabIndex = 10;
@@ -347,7 +337,7 @@
             // 
             // panel20
             // 
-            panel20.Location = new Point(637, 244);
+            panel20.Location = new Point(773, 261);
             panel20.Name = "panel20";
             panel20.Size = new Size(20, 15);
             panel20.TabIndex = 11;
@@ -355,7 +345,7 @@
             // 
             // panel21
             // 
-            panel21.Location = new Point(806, 244);
+            panel21.Location = new Point(942, 261);
             panel21.Name = "panel21";
             panel21.Size = new Size(20, 15);
             panel21.TabIndex = 12;
@@ -363,7 +353,7 @@
             // 
             // panel22
             // 
-            panel22.Location = new Point(908, 244);
+            panel22.Location = new Point(1044, 261);
             panel22.Name = "panel22";
             panel22.Size = new Size(20, 15);
             panel22.TabIndex = 13;
@@ -371,7 +361,7 @@
             // 
             // panel23
             // 
-            panel23.Location = new Point(537, 223);
+            panel23.Location = new Point(673, 240);
             panel23.Name = "panel23";
             panel23.Size = new Size(20, 15);
             panel23.TabIndex = 14;
@@ -379,7 +369,7 @@
             // 
             // panel24
             // 
-            panel24.Location = new Point(637, 223);
+            panel24.Location = new Point(773, 240);
             panel24.Name = "panel24";
             panel24.Size = new Size(20, 15);
             panel24.TabIndex = 15;
@@ -387,7 +377,7 @@
             // 
             // panel25
             // 
-            panel25.Location = new Point(806, 223);
+            panel25.Location = new Point(942, 240);
             panel25.Name = "panel25";
             panel25.Size = new Size(20, 15);
             panel25.TabIndex = 16;
@@ -395,18 +385,163 @@
             // 
             // panel26
             // 
-            panel26.Location = new Point(908, 223);
+            panel26.Location = new Point(1044, 240);
             panel26.Name = "panel26";
             panel26.Size = new Size(20, 15);
             panel26.TabIndex = 17;
             panel26.Paint += panel26_Paint;
+            // 
+            // customButton1
+            // 
+            customButton1.BackColor = Color.FromArgb(64, 64, 64);
+            customButton1.BackgroundColor = Color.FromArgb(64, 64, 64);
+            customButton1.BorderColor = Color.White;
+            customButton1.BorderRadius = 10;
+            customButton1.BorderSize = 0;
+            customButton1.FlatAppearance.BorderSize = 0;
+            customButton1.FlatStyle = FlatStyle.Flat;
+            customButton1.ForeColor = Color.White;
+            customButton1.Location = new Point(12, 12);
+            customButton1.Name = "customButton1";
+            customButton1.Size = new Size(61, 38);
+            customButton1.TabIndex = 18;
+            customButton1.Text = "Simulate\r\nFaults";
+            customButton1.TextColor = Color.White;
+            customButton1.UseVisualStyleBackColor = false;
+            customButton1.Click += customButton1_Click;
+            // 
+            // panel27
+            // 
+            panel27.BackColor = Color.White;
+            panel27.Controls.Add(label16);
+            panel27.Controls.Add(label15);
+            panel27.Controls.Add(label14);
+            panel27.Controls.Add(label13);
+            panel27.Controls.Add(label12);
+            panel27.Controls.Add(label11);
+            panel27.Controls.Add(button5);
+            panel27.Controls.Add(button4);
+            panel27.Controls.Add(button3);
+            panel27.Controls.Add(button2);
+            panel27.Controls.Add(button1);
+            panel27.Location = new Point(12, 56);
+            panel27.Name = "panel27";
+            panel27.Size = new Size(209, 272);
+            panel27.TabIndex = 19;
+            panel27.Visible = false;
+            panel27.Paint += panel27_Paint;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(47, 214);
+            label16.Name = "label16";
+            label16.Size = new Size(101, 15);
+            label16.TabIndex = 10;
+            label16.Text = "Random Location";
+            label16.Click += label16_Click;
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(13, 169);
+            label15.Name = "label15";
+            label15.Size = new Size(179, 15);
+            label15.TabIndex = 9;
+            label15.Text = "Substation #3 and Switchyard #2";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(13, 81);
+            label14.Name = "label14";
+            label14.Size = new Size(177, 15);
+            label14.TabIndex = 8;
+            label14.Text = "Substation #1 and Substation #2";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(60, 13);
+            label13.Name = "label13";
+            label13.Size = new Size(84, 15);
+            label13.TabIndex = 7;
+            label13.Text = "Fault Between:";
+            label13.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(13, 125);
+            label12.Name = "label12";
+            label12.Size = new Size(177, 15);
+            label12.TabIndex = 6;
+            label12.Text = "Substation #2 and Substation #3";
+            label12.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(13, 37);
+            label11.Name = "label11";
+            label11.Size = new Size(179, 15);
+            label11.TabIndex = 5;
+            label11.Text = "SwitchYard #1 and Substation #1";
+            label11.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(60, 232);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 4;
+            button5.Text = "Simulate";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(60, 188);
+            button4.Name = "button4";
+            button4.Size = new Size(75, 23);
+            button4.TabIndex = 3;
+            button4.Text = "Simulate";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(60, 143);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 2;
+            button3.Text = "Simulate";
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(60, 99);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 1;
+            button2.Text = "Simulate";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(60, 55);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 0;
+            button1.Text = "Simulate";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(1444, 661);
+            ClientSize = new Size(1717, 661);
+            Controls.Add(panel27);
+            Controls.Add(customButton1);
             Controls.Add(panel26);
             Controls.Add(panel25);
             Controls.Add(panel24);
@@ -445,6 +580,8 @@
             panel9.ResumeLayout(false);
             panel10.ResumeLayout(false);
             panel10.PerformLayout();
+            panel27.ResumeLayout(false);
+            panel27.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -470,9 +607,7 @@
         private Label label3;
         private Label label6;
         private Label label5;
-        private Label label8;
         private Label label7;
-        private Label label10;
         private Label label9;
         private Panel panel16;
         private Panel panel17;
@@ -486,5 +621,18 @@
         private Panel panel24;
         private Panel panel25;
         private Panel panel26;
+        private CustomButton customButton1;
+        private Panel panel27;
+        private Button button4;
+        private Button button3;
+        private Button button2;
+        private Button button1;
+        private Button button5;
+        private Label label11;
+        private Label label12;
+        private Label label13;
+        private Label label14;
+        private Label label16;
+        private Label label15;
     }
 }
