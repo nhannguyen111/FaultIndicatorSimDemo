@@ -146,5 +146,171 @@ namespace FaultIndicatorSimDemo
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            panel15.Visible = false;
+            panel16.Visible = false;
+            panel17.Visible = false;
+            panel18.Visible = false;
+            panel19.Visible = false;
+            panel20.Visible = false;
+            panel21.Visible = false;
+            panel22.Visible = false;
+            panel23.Visible = false;
+            panel24.Visible = false;
+            panel25.Visible = false;
+            panel26.Visible = false;
+
+            panel23.Visible = true;
+            panel24.Visible = true;
+            panel25.Visible = true;
+            panel26.Visible = true;
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            panel15.Visible = false;
+            panel16.Visible = false;
+            panel17.Visible = false;
+            panel18.Visible = false;
+            panel19.Visible = false;
+            panel20.Visible = false;
+            panel21.Visible = false;
+            panel22.Visible = false;
+            panel23.Visible = false;
+            panel24.Visible = false;
+            panel25.Visible = false;
+            panel26.Visible = false;
+
+            panel19.Visible = true;
+            panel24.Visible = true;
+            panel25.Visible = true;
+            panel26.Visible = true;
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            panel15.Visible = false;
+            panel16.Visible = false;
+            panel17.Visible = false;
+            panel18.Visible = false;
+            panel19.Visible = false;
+            panel20.Visible = false;
+            panel21.Visible = false;
+            panel22.Visible = false;
+            panel23.Visible = false;
+            panel24.Visible = false;
+            panel25.Visible = false;
+            panel26.Visible = false;
+
+            panel19.Visible = true;
+            panel20.Visible = true;
+            panel21.Visible = true;
+            panel26.Visible = true;
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            panel15.Visible = false;
+            panel16.Visible = false;
+            panel17.Visible = false;
+            panel18.Visible = false;
+            panel19.Visible = false;
+            panel20.Visible = false;
+            panel21.Visible = false;
+            panel22.Visible = false;
+            panel23.Visible = false;
+            panel24.Visible = false;
+            panel25.Visible = false;
+            panel26.Visible = false;
+
+            panel19.Visible = true;
+            panel20.Visible = true;
+            panel21.Visible = true;
+            panel22.Visible = true;
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            panel15.Visible = false;
+            panel16.Visible = false;
+            panel17.Visible = false;
+            panel18.Visible = false;
+            panel19.Visible = false;
+            panel20.Visible = false;
+            panel21.Visible = false;
+            panel22.Visible = false;
+            panel23.Visible = false;
+            panel24.Visible = false;
+            panel25.Visible = false;
+            panel26.Visible = false;
+
+            Random random = new Random();
+
+            int randomNumber = random.Next(1, 5);
+
+            switch (randomNumber)
+            {
+                case 1:
+                    panel23.Visible = true;
+                    panel24.Visible = true;
+                    panel25.Visible = true;
+                    panel26.Visible = true;
+                    break;
+                case 2:
+                    panel19.Visible = true;
+                    panel24.Visible = true;
+                    panel25.Visible = true;
+                    panel26.Visible = true;
+                    break;
+
+                case 3:
+                    panel19.Visible = true;
+                    panel20.Visible = true;
+                    panel21.Visible = true;
+                    panel26.Visible = true;
+                    break;
+                case 4:
+                    panel19.Visible = true;
+                    panel20.Visible = true;
+                    panel21.Visible = true;
+                    panel22.Visible = true;
+                    break; 
+            }
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+            panel15.Visible = false;
+            panel16.Visible = false;
+            panel17.Visible = false;
+            panel18.Visible = false;
+            panel19.Visible = false;
+            panel20.Visible = false;
+            panel21.Visible = false;
+            panel22.Visible = false;
+            panel23.Visible = false;
+            panel24.Visible = false;
+            panel25.Visible = false;
+            panel26.Visible = false;
+
+            panel15.Visible = true;
+            panel16.Visible = true;
+            panel17.Visible = true;
+            panel18.Visible = true;
+
+        }
     }
 }
