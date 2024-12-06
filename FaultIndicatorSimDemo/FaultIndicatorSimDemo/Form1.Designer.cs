@@ -30,28 +30,32 @@
         {
             panel1 = new Panel();
             panel2 = new Panel();
+            label10 = new Label();
+            label9 = new Label();
             panel3 = new Panel();
             panel4 = new Panel();
+            label8 = new Label();
+            label7 = new Label();
             panel5 = new Panel();
             panel6 = new Panel();
+            label2 = new Label();
+            label1 = new Label();
             panel7 = new Panel();
             panel8 = new Panel();
+            label4 = new Label();
+            label3 = new Label();
             panel9 = new Panel();
             panel10 = new Panel();
+            label6 = new Label();
+            label5 = new Label();
             panel11 = new Panel();
             panel12 = new Panel();
             panel13 = new Panel();
             panel14 = new Panel();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
+            panel16 = new Panel();
+            panel17 = new Panel();
+            panel18 = new Panel();
+            panel15 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -83,6 +87,27 @@
             panel2.Size = new Size(90, 90);
             panel2.TabIndex = 0;
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.ForeColor = Color.Red;
+            label10.Location = new Point(24, 48);
+            label10.Name = "label10";
+            label10.Size = new Size(46, 15);
+            label10.TabIndex = 2;
+            label10.Text = "Yard #1";
+            label10.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.ForeColor = Color.Red;
+            label9.Location = new Point(24, 33);
+            label9.Name = "label9";
+            label9.Size = new Size(42, 15);
+            label9.TabIndex = 1;
+            label9.Text = "Switch";
+            // 
             // panel3
             // 
             panel3.BackColor = Color.Red;
@@ -101,6 +126,27 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(90, 90);
             panel4.TabIndex = 0;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.ForeColor = Color.Red;
+            label8.Location = new Point(25, 48);
+            label8.Name = "label8";
+            label8.Size = new Size(46, 15);
+            label8.TabIndex = 1;
+            label8.Text = "Yard #2";
+            label8.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.ForeColor = Color.Red;
+            label7.Location = new Point(25, 33);
+            label7.Name = "label7";
+            label7.Size = new Size(42, 15);
+            label7.TabIndex = 0;
+            label7.Text = "Switch";
             // 
             // panel5
             // 
@@ -121,6 +167,26 @@
             panel6.Size = new Size(110, 70);
             panel6.TabIndex = 0;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.ForeColor = Color.Yellow;
+            label2.Location = new Point(45, 38);
+            label2.Name = "label2";
+            label2.Size = new Size(20, 15);
+            label2.TabIndex = 1;
+            label2.Text = "#1";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = Color.Yellow;
+            label1.Location = new Point(23, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(63, 15);
+            label1.TabIndex = 0;
+            label1.Text = "Substation";
+            // 
             // panel7
             // 
             panel7.BackColor = Color.Yellow;
@@ -140,6 +206,26 @@
             panel8.Size = new Size(110, 70);
             panel8.TabIndex = 0;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.Yellow;
+            label4.Location = new Point(45, 38);
+            label4.Name = "label4";
+            label4.Size = new Size(20, 15);
+            label4.TabIndex = 2;
+            label4.Text = "#2";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.ForeColor = Color.Yellow;
+            label3.Location = new Point(24, 23);
+            label3.Name = "label3";
+            label3.Size = new Size(63, 15);
+            label3.TabIndex = 1;
+            label3.Text = "Substation";
+            // 
             // panel9
             // 
             panel9.BackColor = Color.Yellow;
@@ -158,6 +244,26 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(110, 70);
             panel10.TabIndex = 0;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.ForeColor = Color.Yellow;
+            label6.Location = new Point(46, 38);
+            label6.Name = "label6";
+            label6.Size = new Size(20, 15);
+            label6.TabIndex = 3;
+            label6.Text = "#3";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.ForeColor = Color.Yellow;
+            label5.Location = new Point(25, 23);
+            label5.Name = "label5";
+            label5.Size = new Size(63, 15);
+            label5.TabIndex = 1;
+            label5.Text = "Substation";
             // 
             // panel11
             // 
@@ -191,107 +297,37 @@
             panel14.Size = new Size(148, 8);
             panel14.TabIndex = 5;
             // 
-            // label1
+            // panel16
             // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.Yellow;
-            label1.Location = new Point(23, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(63, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Substation";
+            panel16.Location = new Point(637, 265);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(15, 15);
+            panel16.TabIndex = 7;
+            panel16.Paint += panel16_Paint;
             // 
-            // label2
+            // panel17
             // 
-            label2.AutoSize = true;
-            label2.ForeColor = Color.Yellow;
-            label2.Location = new Point(45, 38);
-            label2.Name = "label2";
-            label2.Size = new Size(20, 15);
-            label2.TabIndex = 1;
-            label2.Text = "#1";
+            panel17.Location = new Point(806, 265);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(15, 15);
+            panel17.TabIndex = 8;
+            panel17.Paint += panel17_Paint;
             // 
-            // label3
+            // panel18
             // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.Yellow;
-            label3.Location = new Point(24, 23);
-            label3.Name = "label3";
-            label3.Size = new Size(63, 15);
-            label3.TabIndex = 1;
-            label3.Text = "Substation";
+            panel18.Location = new Point(908, 265);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(15, 15);
+            panel18.TabIndex = 9;
+            panel18.Paint += panel18_Paint;
             // 
-            // label4
+            // panel15
             // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.Yellow;
-            label4.Location = new Point(45, 38);
-            label4.Name = "label4";
-            label4.Size = new Size(20, 15);
-            label4.TabIndex = 2;
-            label4.Text = "#2";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.ForeColor = Color.Yellow;
-            label5.Location = new Point(25, 23);
-            label5.Name = "label5";
-            label5.Size = new Size(63, 15);
-            label5.TabIndex = 1;
-            label5.Text = "Substation";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.ForeColor = Color.Yellow;
-            label6.Location = new Point(46, 38);
-            label6.Name = "label6";
-            label6.Size = new Size(20, 15);
-            label6.TabIndex = 3;
-            label6.Text = "#3";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.ForeColor = Color.Red;
-            label7.Location = new Point(25, 33);
-            label7.Name = "label7";
-            label7.Size = new Size(42, 15);
-            label7.TabIndex = 0;
-            label7.Text = "Switch";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.ForeColor = Color.Red;
-            label8.Location = new Point(25, 48);
-            label8.Name = "label8";
-            label8.Size = new Size(46, 15);
-            label8.TabIndex = 1;
-            label8.Text = "Yard #2";
-            label8.TextAlign = ContentAlignment.TopCenter;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.ForeColor = Color.Red;
-            label9.Location = new Point(24, 33);
-            label9.Name = "label9";
-            label9.Size = new Size(42, 15);
-            label9.TabIndex = 1;
-            label9.Text = "Switch";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.ForeColor = Color.Red;
-            label10.Location = new Point(24, 48);
-            label10.Name = "label10";
-            label10.Size = new Size(46, 15);
-            label10.TabIndex = 2;
-            label10.Text = "Yard #1";
-            label10.TextAlign = ContentAlignment.TopCenter;
+            panel15.Location = new Point(537, 265);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(15, 15);
+            panel15.TabIndex = 6;
+            panel15.Paint += panel15_Paint;
             // 
             // Form1
             // 
@@ -299,6 +335,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1444, 661);
+            Controls.Add(panel18);
+            Controls.Add(panel17);
+            Controls.Add(panel16);
+            Controls.Add(panel15);
             Controls.Add(panel14);
             Controls.Add(panel13);
             Controls.Add(panel12);
@@ -354,5 +394,9 @@
         private Label label7;
         private Label label10;
         private Label label9;
+        private Panel panel16;
+        private Panel panel17;
+        private Panel panel18;
+        private Panel panel15;
     }
 }
