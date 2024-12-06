@@ -131,5 +131,20 @@ namespace FaultIndicatorSimDemo
             InitializeGraphics(e);
             DrawLeftRedArrow();
         }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+            panel27.Visible = !panel27.Visible;
+        }
+
+        private void panel27_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
