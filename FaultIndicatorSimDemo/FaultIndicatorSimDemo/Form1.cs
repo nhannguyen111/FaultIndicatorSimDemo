@@ -7,152 +7,129 @@ namespace FaultIndicatorSimDemo
             InitializeComponent();
         }
 
+        private Graphics graphics; // Private field to hold Graphics context
+
+        // Method to set up the graphics object (called in Paint handlers)
+        private void InitializeGraphics(PaintEventArgs e)
+        {
+            graphics = e.Graphics;
+        }
+
+        // General method to draw a circle
+        private void DrawWhiteCircle()
+        {
+            if (graphics == null) return;
+
+            using (Pen pen = new Pen(Color.White, 2))
+            {
+                graphics.DrawEllipse(pen, 0, 0, 10, 10);
+            }
+        }
+
+        // General method to draw a green arrow pointing to the right
+        private void DrawRightGreenArrow()
+        {
+            if (graphics == null) return;
+
+            Point[] greenArrowPoints = {
+                new Point(0, 4), new Point(12, 4), new Point(12, 0),
+                new Point(18, 6), new Point(12, 12), new Point(12, 8),
+                new Point(0, 8)
+            };
+
+            using (Brush brush = new SolidBrush(Color.Green))
+            {
+                graphics.FillPolygon(brush, greenArrowPoints);
+            }
+        }
+
+        // General method to draw a red arrow pointing to the left
+        private void DrawLeftRedArrow()
+        {
+            if (graphics == null) return;
+
+            Point[] redArrowPoints = {
+                new Point(18, 4), new Point(6, 4), new Point(6, 0),
+                new Point(0, 6), new Point(6, 12), new Point(6, 8),
+                new Point(18, 8)
+            };
+
+            using (Brush brush = new SolidBrush(Color.Red))
+            {
+                graphics.FillPolygon(brush, redArrowPoints);
+            }
+        }
+
         private void panel15_Paint(object sender, PaintEventArgs e)
         {
-            // Get the Graphics object
-            Graphics g = e.Graphics;
-
-            // Define the pen to draw the circle
-            using (Pen pen = new Pen(Color.White, 2)) // Blue color, 2px thickness
-            {
-                // Draw a circle
-                g.DrawEllipse(pen, 0, 0, 10, 10); // x, y, width, height
-            }
+            InitializeGraphics(e);
+            DrawWhiteCircle();
         }
 
         private void panel16_Paint(object sender, PaintEventArgs e)
         {
-            // Get the Graphics object
-            Graphics g = e.Graphics;
-
-            // Define the pen to draw the circle
-            using (Pen pen = new Pen(Color.White, 2)) // Blue color, 2px thickness
-            {
-                // Draw a circle
-                g.DrawEllipse(pen, 0, 0, 10, 10); // x, y, width, height
-            }
+            InitializeGraphics(e);
+            DrawWhiteCircle();
         }
 
         private void panel17_Paint(object sender, PaintEventArgs e)
         {
-            // Get the Graphics object
-            Graphics g = e.Graphics;
-
-            // Define the pen to draw the circle
-            using (Pen pen = new Pen(Color.White, 2)) // Blue color, 2px thickness
-            {
-                // Draw a circle
-                g.DrawEllipse(pen, 0, 0, 10, 10); // x, y, width, height
-            }
+            InitializeGraphics(e);
+            DrawWhiteCircle();
         }
 
         private void panel18_Paint(object sender, PaintEventArgs e)
         {
-            // Get the Graphics object
-            Graphics g = e.Graphics;
-
-            // Define the pen to draw the circle
-            using (Pen pen = new Pen(Color.White, 2)) // Blue color, 2px thickness
-            {
-                // Draw a circle
-                g.DrawEllipse(pen, 0, 0, 10, 10); // x, y, width, height
-            }
+            InitializeGraphics(e);
+            DrawWhiteCircle();
         }
 
         private void panel19_Paint(object sender, PaintEventArgs e)
         {
-            // Get the Graphics object from the PaintEventArgs
-            Graphics g = e.Graphics;
-
-            // Define the brush for filling the arrow
-            using (Brush brush = new SolidBrush(Color.Green))
-            {
-                // Define the points of the arrow
-                Point[] arrowPoints = {
-                    new Point(0, 4),  // Left point of the arrow tail
-                    new Point(12, 4), // Right end of the tail
-                    new Point(12, 0), // Top indent
-                    new Point(18, 6), // Arrowhead tip
-                    new Point(12, 12), // Bottom indent
-                    new Point(12, 8), // Right end of the tail
-                    new Point(0, 8)  // Left point of the arrow tail
-                };
-
-                // Draw and fill the polygon (the arrow)
-                g.FillPolygon(brush, arrowPoints);
-            }
+            InitializeGraphics(e);
+            DrawRightGreenArrow();
         }
 
         private void panel20_Paint(object sender, PaintEventArgs e)
         {
-            // Get the Graphics object from the PaintEventArgs
-            Graphics g = e.Graphics;
-
-            // Define the brush for filling the arrow
-            using (Brush brush = new SolidBrush(Color.Green))
-            {
-                // Define the points of the arrow
-                Point[] arrowPoints = {
-                    new Point(0, 4),  // Left point of the arrow tail
-                    new Point(12, 4), // Right end of the tail
-                    new Point(12, 0), // Top indent
-                    new Point(18, 6), // Arrowhead tip
-                    new Point(12, 12), // Bottom indent
-                    new Point(12, 8), // Right end of the tail
-                    new Point(0, 8)  // Left point of the arrow tail
-                };
-
-                // Draw and fill the polygon (the arrow)
-                g.FillPolygon(brush, arrowPoints);
-            }
+            InitializeGraphics(e);
+            DrawRightGreenArrow();
         }
 
         private void panel21_Paint(object sender, PaintEventArgs e)
         {
-            // Get the Graphics object from the PaintEventArgs
-            Graphics g = e.Graphics;
-
-            // Define the brush for filling the arrow
-            using (Brush brush = new SolidBrush(Color.Green))
-            {
-                // Define the points of the arrow
-                Point[] arrowPoints = {
-                    new Point(0, 4),  // Left point of the arrow tail
-                    new Point(12, 4), // Right end of the tail
-                    new Point(12, 0), // Top indent
-                    new Point(18, 6), // Arrowhead tip
-                    new Point(12, 12), // Bottom indent
-                    new Point(12, 8), // Right end of the tail
-                    new Point(0, 8)  // Left point of the arrow tail
-                };
-
-                // Draw and fill the polygon (the arrow)
-                g.FillPolygon(brush, arrowPoints);
-            }
+            InitializeGraphics(e);
+            DrawRightGreenArrow();
         }
 
         private void panel22_Paint(object sender, PaintEventArgs e)
         {
-            // Get the Graphics object from the PaintEventArgs
-            Graphics g = e.Graphics;
+            InitializeGraphics(e);
+            DrawRightGreenArrow();
+        }
 
-            // Define the brush for filling the arrow
-            using (Brush brush = new SolidBrush(Color.Green))
-            {
-                // Define the points of the arrow
-                Point[] arrowPoints = {
-                    new Point(0, 4),  // Left point of the arrow tail
-                    new Point(12, 4), // Right end of the tail
-                    new Point(12, 0), // Top indent
-                    new Point(18, 6), // Arrowhead tip
-                    new Point(12, 12), // Bottom indent
-                    new Point(12, 8), // Right end of the tail
-                    new Point(0, 8)  // Left point of the arrow tail
-                };
+        private void panel23_Paint(object sender, PaintEventArgs e)
+        {
+            InitializeGraphics(e);
+            DrawLeftRedArrow();
+        }
 
-                // Draw and fill the polygon (the arrow)
-                g.FillPolygon(brush, arrowPoints);
-            }
+        private void panel24_Paint(object sender, PaintEventArgs e)
+        {
+            InitializeGraphics(e);
+            DrawLeftRedArrow();
+        }
+
+        private void panel25_Paint(object sender, PaintEventArgs e)
+        {
+            InitializeGraphics(e);
+            DrawLeftRedArrow();
+        }
+
+        private void panel26_Paint(object sender, PaintEventArgs e)
+        {
+            InitializeGraphics(e);
+            DrawLeftRedArrow();
         }
     }
 }

@@ -60,6 +60,10 @@
             panel20 = new Panel();
             panel21 = new Panel();
             panel22 = new Panel();
+            panel23 = new Panel();
+            panel24 = new Panel();
+            panel25 = new Panel();
+            panel26 = new Panel();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
@@ -365,12 +369,48 @@
             panel22.TabIndex = 13;
             panel22.Paint += panel22_Paint;
             // 
+            // panel23
+            // 
+            panel23.Location = new Point(537, 223);
+            panel23.Name = "panel23";
+            panel23.Size = new Size(20, 15);
+            panel23.TabIndex = 14;
+            panel23.Paint += panel23_Paint;
+            // 
+            // panel24
+            // 
+            panel24.Location = new Point(637, 223);
+            panel24.Name = "panel24";
+            panel24.Size = new Size(20, 15);
+            panel24.TabIndex = 15;
+            panel24.Paint += panel24_Paint;
+            // 
+            // panel25
+            // 
+            panel25.Location = new Point(806, 223);
+            panel25.Name = "panel25";
+            panel25.Size = new Size(20, 15);
+            panel25.TabIndex = 16;
+            panel25.Paint += panel25_Paint;
+            // 
+            // panel26
+            // 
+            panel26.Location = new Point(908, 223);
+            panel26.Name = "panel26";
+            panel26.Size = new Size(20, 15);
+            panel26.TabIndex = 17;
+            panel26.Paint += panel26_Paint;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1444, 661);
+            Controls.Add(panel26);
+            Controls.Add(panel25);
+            Controls.Add(panel24);
+            Controls.Add(panel23);
             Controls.Add(panel22);
             Controls.Add(panel21);
             Controls.Add(panel20);
@@ -442,5 +482,9 @@
         private Panel panel20;
         private Panel panel21;
         private Panel panel22;
+        private Panel panel23;
+        private Panel panel24;
+        private Panel panel25;
+        private Panel panel26;
     }
 }
