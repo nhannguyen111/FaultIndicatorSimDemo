@@ -2,9 +2,22 @@ namespace FaultIndicatorSimDemo
 {
     public partial class Form1 : Form
     {
+
+        public static class GlobalTimers
+        {
+
+            public static System.Windows.Forms.Timer blinkTimer = new System.Windows.Forms.Timer();
+
+        }
+
+
+        //private System.Windows.Forms.Timer blinkTimer;
+
         public Form1()
         {
             InitializeComponent();
+            GlobalTimers.blinkTimer.Interval = 1000;
+
         }
 
         private Graphics graphics; // Private field to hold Graphics context
@@ -149,7 +162,7 @@ namespace FaultIndicatorSimDemo
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
             panel15.Visible = false;
             panel16.Visible = false;
             panel17.Visible = false;
@@ -163,10 +176,26 @@ namespace FaultIndicatorSimDemo
             panel25.Visible = false;
             panel26.Visible = false;
 
+            panel1.BackColor = Color.Green;
+            label9.ForeColor = Color.Green;
+            panel3.BackColor = Color.Green;
+            label7.ForeColor = Color.Green;
+
+            GlobalTimers.blinkTimer.Stop();
+
             panel23.Visible = true;
             panel24.Visible = true;
             panel25.Visible = true;
             panel26.Visible = true;
+
+            GlobalTimers.blinkTimer.Tick += (sender, e) =>
+            {
+                panel23.Visible = !panel23.Visible;
+                panel24.Visible = !panel24.Visible;
+                panel25.Visible = !panel25.Visible;
+                panel26.Visible = !panel26.Visible;
+            };
+            GlobalTimers.blinkTimer.Start(); 
 
         }
 
@@ -186,10 +215,26 @@ namespace FaultIndicatorSimDemo
             panel25.Visible = false;
             panel26.Visible = false;
 
+            panel1.BackColor = Color.Green;
+            label9.ForeColor = Color.Green;
+            panel3.BackColor = Color.Green;
+            label7.ForeColor = Color.Green;
+
+            GlobalTimers.blinkTimer.Stop();
+
             panel19.Visible = true;
             panel24.Visible = true;
             panel25.Visible = true;
             panel26.Visible = true;
+
+            GlobalTimers.blinkTimer.Tick += (sender, e) =>
+            {
+                panel19.Visible = !panel19.Visible;
+                panel24.Visible = !panel24.Visible;
+                panel25.Visible = !panel25.Visible;
+                panel26.Visible = !panel26.Visible;
+            };
+            GlobalTimers.blinkTimer.Start();
 
         }
 
@@ -209,10 +254,27 @@ namespace FaultIndicatorSimDemo
             panel25.Visible = false;
             panel26.Visible = false;
 
+            panel1.BackColor = Color.Green;
+            label9.ForeColor = Color.Green;
+            panel3.BackColor = Color.Green;
+            label7.ForeColor = Color.Green;
+
+            GlobalTimers.blinkTimer.Stop();
+
             panel19.Visible = true;
             panel20.Visible = true;
             panel21.Visible = true;
             panel26.Visible = true;
+
+            GlobalTimers.blinkTimer.Tick += (sender, e) =>
+            {
+                panel19.Visible = !panel19.Visible;
+                panel20.Visible = !panel20.Visible;
+                panel21.Visible = !panel21.Visible;
+                panel26.Visible = !panel26.Visible;
+            };
+            GlobalTimers.blinkTimer.Start();
+
 
         }
 
@@ -232,10 +294,26 @@ namespace FaultIndicatorSimDemo
             panel25.Visible = false;
             panel26.Visible = false;
 
+            panel1.BackColor = Color.Green;
+            label9.ForeColor = Color.Green;
+            panel3.BackColor = Color.Green;
+            label7.ForeColor = Color.Green;
+
+            GlobalTimers.blinkTimer.Stop();
+
             panel19.Visible = true;
             panel20.Visible = true;
             panel21.Visible = true;
             panel22.Visible = true;
+
+            GlobalTimers.blinkTimer.Tick += (sender, e) =>
+            {
+                panel19.Visible = !panel19.Visible;
+                panel20.Visible = !panel20.Visible;
+                panel21.Visible = !panel21.Visible;
+                panel22.Visible = !panel22.Visible;
+            };
+            GlobalTimers.blinkTimer.Start();
 
         }
 
@@ -254,6 +332,11 @@ namespace FaultIndicatorSimDemo
             panel24.Visible = false;
             panel25.Visible = false;
             panel26.Visible = false;
+
+            panel1.BackColor = Color.Green;
+            label9.ForeColor = Color.Green;
+            panel3.BackColor = Color.Green;
+            label7.ForeColor = Color.Green;
 
             Random random = new Random();
 
@@ -305,6 +388,13 @@ namespace FaultIndicatorSimDemo
             panel24.Visible = false;
             panel25.Visible = false;
             panel26.Visible = false;
+
+            panel1.BackColor = Color.Red;
+            label9.ForeColor = Color.Red;
+            panel3.BackColor = Color.Red;
+            label7.ForeColor = Color.Red;
+
+            GlobalTimers.blinkTimer.Stop();
 
             panel15.Visible = true;
             panel16.Visible = true;
