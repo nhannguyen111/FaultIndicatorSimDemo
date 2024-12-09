@@ -2,6 +2,12 @@ namespace FaultIndicatorSimDemo
 {
     public partial class Form1 : Form
     {
+
+        // Declare a System.Windows.Forms.Timer object at the class level
+        private System.Windows.Forms.Timer blinkTimer;
+        private bool isVisible = true; // Track visibility state for blinking
+        private List<Panel> blinkingPanels; // Store the panels to be blinked
+
         public Form1()
         {
             InitializeComponent();
@@ -58,6 +64,12 @@ namespace FaultIndicatorSimDemo
             {
                 graphics.FillPolygon(brush, redArrowPoints);
             }
+        }
+
+        private void greenSwitchyard()
+        {
+            panel1.BackColor = Color.Green;
+            panel3.BackColor = Color.Green;
         }
 
         private void panel15_Paint(object sender, PaintEventArgs e)
@@ -147,8 +159,33 @@ namespace FaultIndicatorSimDemo
 
         }
 
+        private void InitializeBlinking()
+        {
+            if (blinkTimer == null)
+            {
+                blinkTimer = new System.Windows.Forms.Timer();
+                blinkTimer.Interval = 500; // Set interval to 500 milliseconds (0.5 seconds)
+                blinkTimer.Tick += BlinkTimer_Tick;
+            }
+
+            blinkTimer.Start();
+        }
+
+        private void BlinkTimer_Tick(object sender, EventArgs e)
+        {
+            // Toggle the visibility of the blinking panels
+            isVisible = !isVisible;
+
+            foreach (var panel in blinkingPanels)
+            {
+                panel.Visible = isVisible;
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+
+            greenSwitchyard();
 
             panel15.Visible = false;
             panel16.Visible = false;
@@ -163,16 +200,24 @@ namespace FaultIndicatorSimDemo
             panel25.Visible = false;
             panel26.Visible = false;
 
-            panel23.Visible = true;
-            panel24.Visible = true;
-            panel25.Visible = true;
-            panel26.Visible = true;
+            // Define the panels to blink
+            blinkingPanels = new List<Panel> { panel23, panel24, panel25, panel26 };
+
+            // Ensure initial visibility is set
+            foreach (var panel in blinkingPanels)
+            {
+                panel.Visible = true;
+            }
+
+            InitializeBlinking();
 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
 
+            greenSwitchyard();
+
             panel15.Visible = false;
             panel16.Visible = false;
             panel17.Visible = false;
@@ -186,16 +231,24 @@ namespace FaultIndicatorSimDemo
             panel25.Visible = false;
             panel26.Visible = false;
 
-            panel19.Visible = true;
-            panel24.Visible = true;
-            panel25.Visible = true;
-            panel26.Visible = true;
+            // Define the panels to blink
+            blinkingPanels = new List<Panel> { panel19, panel24, panel25, panel26 };
+
+            // Ensure initial visibility is set
+            foreach (var panel in blinkingPanels)
+            {
+                panel.Visible = true;
+            }
+
+            InitializeBlinking();
 
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
 
+            greenSwitchyard();
+
             panel15.Visible = false;
             panel16.Visible = false;
             panel17.Visible = false;
@@ -209,16 +262,24 @@ namespace FaultIndicatorSimDemo
             panel25.Visible = false;
             panel26.Visible = false;
 
-            panel19.Visible = true;
-            panel20.Visible = true;
-            panel21.Visible = true;
-            panel26.Visible = true;
+            // Define the panels to blink
+            blinkingPanels = new List<Panel> { panel19, panel20, panel21, panel26 };
+
+            // Ensure initial visibility is set
+            foreach (var panel in blinkingPanels)
+            {
+                panel.Visible = true;
+            }
+
+            InitializeBlinking();
 
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
 
+            greenSwitchyard();
+
             panel15.Visible = false;
             panel16.Visible = false;
             panel17.Visible = false;
@@ -232,15 +293,23 @@ namespace FaultIndicatorSimDemo
             panel25.Visible = false;
             panel26.Visible = false;
 
-            panel19.Visible = true;
-            panel20.Visible = true;
-            panel21.Visible = true;
-            panel22.Visible = true;
+            // Define the panels to blink
+            blinkingPanels = new List<Panel> { panel19, panel20, panel21, panel22 };
+
+            // Ensure initial visibility is set
+            foreach (var panel in blinkingPanels)
+            {
+                panel.Visible = true;
+            }
+
+            InitializeBlinking();
 
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+
+            greenSwitchyard();
 
             panel15.Visible = false;
             panel16.Visible = false;
@@ -262,29 +331,17 @@ namespace FaultIndicatorSimDemo
             switch (randomNumber)
             {
                 case 1:
-                    panel23.Visible = true;
-                    panel24.Visible = true;
-                    panel25.Visible = true;
-                    panel26.Visible = true;
+                    button1.PerformClick();
                     break;
                 case 2:
-                    panel19.Visible = true;
-                    panel24.Visible = true;
-                    panel25.Visible = true;
-                    panel26.Visible = true;
+                    button2.PerformClick();
                     break;
 
                 case 3:
-                    panel19.Visible = true;
-                    panel20.Visible = true;
-                    panel21.Visible = true;
-                    panel26.Visible = true;
+                    button3.PerformClick();
                     break;
                 case 4:
-                    panel19.Visible = true;
-                    panel20.Visible = true;
-                    panel21.Visible = true;
-                    panel22.Visible = true;
+                    button4.PerformClick();
                     break; 
             }
 
@@ -292,6 +349,9 @@ namespace FaultIndicatorSimDemo
 
         private void button6_Click(object sender, EventArgs e)
         {
+
+            panel1.BackColor = Color.Red;
+            panel3.BackColor = Color.Red;
 
             panel15.Visible = false;
             panel16.Visible = false;
@@ -310,6 +370,8 @@ namespace FaultIndicatorSimDemo
             panel16.Visible = true;
             panel17.Visible = true;
             panel18.Visible = true;
+
+            blinkTimer.Stop();
 
         }
     }
